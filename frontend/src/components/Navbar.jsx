@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { faX, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ccs_bulb from '../assets/CCS_Bulb.png';
+import Saturnalia from '../assets/Saturnalia.png';
 import AuthContext from '../helpers/AuthContext';
 import { Link } from 'react-router-dom';
 import Button from './Button';
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <h1 className="text-2xl font-bold">Help</h1>
                     <Button icon={faX} onClick={() => setIsHelpModalVisible(false)} className="text-2xl font-bold bg-transparent" />
                 </div>
-                <p className="mt-4">For any queries, contact us at <a href="mailto:ccs@thapar.edu" className="text-blue-500 font-bold">ccs@thapar.edu</a>
+                <p className="mt-4">For any queries, contact us at <a href="mailto:saturnalia@thapar.edu" className="text-blue-500 font-bold">saturnalia@thapar.edu</a>
                 </p>
             </div>
         </div>
@@ -51,8 +51,8 @@ const Navbar = () => {
                     Merch Store
                 </Link>
             </div>
-            <a draggable={false} href="https://ccstiet.com" target='_blank' className='relative w-[5.4rem] h-24 bg-primary rounded-[50%/40%] justify-center items-center mx-auto hidden sm:flex'>
-                <img src={ccs_bulb} alt="Logo" className="p-2 select-none" draggable={false} />
+            <a draggable={false} href="https://saturnalia.in" target='_blank' className='relative bg-transparent justify-center items-center mx-auto hidden sm:flex'>
+                <img src={Saturnalia} alt="Logo" className="p-2 select-none" draggable={false} />
             </a>
             <div className="relative sm:flex-1 flex justify-end">
                 <FontAwesomeIcon icon={faBars} onClick={toggleDropdown} className="cursor-pointer font-bold text-2xl" />
